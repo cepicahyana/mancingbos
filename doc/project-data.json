@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "format": "ai-project-prep",
+    "version": "1.0",
+    "exportedAt": "2026-09-19T00:24:11.401Z",
+    "appName": "IndoFish",
+    "generator": "AI Project Prep"
+  },
+  "data": {
+    "appName": "IndoFish",
+    "appTagline": "Platform Terbaik untuk Event Mancing",
+    "appPurpose": "Menyediakan aplikasi untuk mengelola dan mengikuti event mancing serta pemesanan lapak.",
+    "targetUsers": "Pencinta mancing, pemilik lapak, operator event, admin, dan superadmin.",
+    "problemStatement": "Sulitnya menemukan event mancing yang tersedia dan mengelola penyewaan lapak secara efisien.",
+    "mvpFeatures": "1. Daftar event mancing 2. Pembuatan event oleh pemilik lapak 3. Penyewaan lapak 4. Input berat ikan oleh operator 5. Pengelolaan data user oleh admin",
+    "futureFeatures": "1. Fitur notifikasi untuk event baru 2. Sistem pembayaran online 3. Fitur rating dan ulasan untuk event",
+    "outOfScope": "Fitur untuk turnamen internasional dan integrasi dengan media sosial.",
+    "frontend": "Laravel",
+    "backend": "Laravel",
+    "database": "MySQL",
+    "auth": "JWT",
+    "styling": "Tailwind CSS",
+    "hosting": "VPS atau Shared Hosting",
+    "otherTech": "Flutter untuk aplikasi mobile",
+    "uiLibraries": "Bootstrap",
+    "codingConventions": "PSR-12",
+    "dbNotes": "Pastikan relasi antara tabel users, events, dan weights terdefinisi dengan baik.",
+    "primaryColor": "#007BFF",
+    "secondaryColor": "#6C757D",
+    "fontFamily": "Arial, sans-serif",
+    "uiStyle": "Modern dan minimalis",
+    "uiLanguage": "id",
+    "uiReferences": "",
+    "uiRules": "Desain responsive untuk mobile dan desktop.",
+    "devPhases": "1. Analisis 2. Desain 3. Pengembangan 4. Pengujian 5. Peluncuran",
+    "aiRules": "",
+    "apiFormat": "REST",
+    "sampleData": "",
+    "flows": [
+      {
+        "name": "Proses Pendaftaran Event",
+        "steps": "1. Pemilik lapak mendaftar 2. Membuat event 3. Mengizinkan penyewaan 4. Operator mendaftar 5. Input berat ikan"
+      }
+    ],
+    "tables": [
+      {
+        "name": "users",
+        "columns": "id, name, email, role, created_at, updated_at",
+        "notes": "Menampung data semua pengguna aplikasi."
+      },
+      {
+        "name": "events",
+        "columns": "id, owner_id, title, description, date, location, created_at, updated_at",
+        "notes": "Data event mancing yang dibuat oleh pemilik lapak."
+      },
+      {
+        "name": "weights",
+        "columns": "id, event_id, user_id, weight, created_at",
+        "notes": "Data berat ikan yang diinput oleh operator."
+      }
+    ]
+  }
+}

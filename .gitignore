@@ -1,0 +1,6 @@
+api/.env
+api/*.db
+api/*.db-journal
+api/*.exe
+.DS_Store
+Thumbs.db

@@ -1,0 +1,46 @@
+---
+description: Aturan proyek IndoFish untuk Cursor AI
+alwaysApply: true
+---
+
+# Project Rules: IndoFish
+
+## Stack
+
+- Frontend: Laravel
+- Backend: Laravel
+- Database: MySQL
+- Auth: JWT
+- Styling: Tailwind CSS
+
+## Stack UI / Library (WAJIB)
+
+- Bootstrap
+
+## Dokumentasi
+
+Sebelum coding, baca file di folder `docs/`:
+1. `01-product-brief.md` — visi & fitur
+2. `03-database-schema.md` — skema database
+3. `06-task-backlog.md` — task yang sedang dikerjakan
+
+## Aturan
+
+- Jangan commit tanpa diminta user
+- Minimal scope per task — jangan ubah kode yang tidak relevan
+- Ikuti konvensi kode di docs/01-product-brief.md
+- Baca docs/ sebelum mulai coding
+- Bahasa UI: Bahasa Indonesia
+
+## Konvensi Kode
+
+- PSR-12
+
+## Larangan
+
+- Jangan ubah file .env tanpa izin
+- Jangan hapus atau rename file docs/
+- Jangan menambah fitur di luar MVP tanpa diminta
+- Jangan ganti stack teknologi
+- Jangan ganti library/pola UI yang sudah ditetapkan di **Stack UI / Library**
+- Jangan pakai `alert()`, `confirm()`, `prompt()` native jika SweetAlert2 sudah ditetapkan
